@@ -1,0 +1,714 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+body{
+  background-color: white;
+  font-family: "Poppins", serif;
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 160px;
+  background-color: bisque;
+  align-items: center;
+  z-index: 9999;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+nav img{
+  width: 300px;
+  position: relative;
+  align-items: center;
+  bottom: -10px;
+  left: 170%;
+  margin: auto;
+  
+}
+
+/* Search Bar */
+.search-bar {
+  position: absolute;
+  left: 5%;
+  top: 31%;
+  transform: translateY(-50%);
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid black; 
+  background-color: transparent; 
+  font-size: 16px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 16px;
+  width: 260px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-120%);
+}
+
+.search-button:hover {
+  color: rgba(0, 0, 0, 0.436);
+}
+
+.search-button i {
+  font-size: 16px; /* Adjust icon size */
+}
+
+
+/* Currency Dropdown */
+.currency-dropdown {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+
+#currencyDropdown {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  padding: 8px 27px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 0%;
+  
+}
+
+#currencyDropdown:hover {
+  background-color: rgb(231, 164, 177);
+  border: 1px solid rgba(231, 164, 177, 0.5);
+  color: white;
+}
+
+
+.currency-dropdown .dropdown-menu {
+  min-width: 120px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(231, 164, 177, 0.813);
+  border-radius: 0%;
+}
+
+.currency-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: black;
+}
+
+.currency-dropdown .dropdown-item:hover {
+  background-color: rgba(231, 164, 177, 0.635);
+  color: white;
+}
+
+.flag-icon {
+  width:20px;
+  height: auto;
+  left: -15%;
+  top: 0px;
+  
+}
+
+.nav-links{
+  display: flex;
+  text-align: center;
+  position: relative;
+  bottom: -94px;
+  right: 10%;
+  margin: auto;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+  
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+   
+}
+.nav-links ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 17px 40px;
+}
+
+
+
+.nav-links ul li a:hover{
+  background-color: rgb(231, 164, 177); 
+  color: white;
+  transition: 0.1s;
+}
+
+
+.text-box{
+  width: 90%;
+  height: auto;
+  color: black;
+  position: relative;
+  bottom: -60px;
+  text-align: center;
+  margin: auto;
+}
+.text-box h2{
+  font-size: 62px;
+  font-weight: 600;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  
+} 
+.hero-button{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: rgb(231, 164, 177);
+  position: relative;
+  cursor: pointer;
+}
+.hero-button:hover{
+  border: 1px solid rgba(231, 164, 177, 0.5);
+  background: rgb(231, 164, 177);
+  color: white;
+  transition: 0.1s;
+}
+
+.products{
+  transform: translateY(-23%);
+}
+
+.products h1{
+  margin-bottom: 4%;
+}
+
+.features, .products{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 160px;
+}
+
+.features h1{
+  font-size: 38px;
+  font-weight: 600; 
+}
+.features p{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.column{
+  flex-basis: 25%;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  right: 4%;
+
+}
+
+.column1{
+  flex-basis: 25%;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  right: 4%;
+  transform: translateX(20%);
+}
+
+
+.row{
+  width: 110%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.row1{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.column img{
+  width: 110%;
+  height: 100%;
+  display: block;
+  
+}
+
+
+
+.layer{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+}
+.layer:hover{
+  background-color: rgba(231, 164, 177, 0.813);
+}
+.layer h3{
+  width: 100%;
+  font-weight: 600;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+}
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+
+}
+
+.footer{
+  background-color: rgb(235, 99, 126);
+  height: 70px;
+  margin-top: 100px;
+  
+}
+
+.footer p{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-section{
+  text-align: center;
+  position: relative;
+  width: 70%;
+  transform: translateX(20%);
+  bottom: -40px;
+}
+.about-section h1 {
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+
+.footer1{
+  background-color: rgb(235, 99, 126);
+  height: 70px;
+  margin-top: 100px;
+  transform: translateY(260%);
+}
+
+.footer1 p{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+}
+
+.quantity-selection input{
+  text-align: center;
+}
+
+.product-card {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.wig-card, .bundle-card {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+
+.wig-card img, .bundle-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  display: block;
+  padding: 6%;
+}
+
+.wig-card h3, .bundle-card h3, .product-card h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+
+.container{
+  text-align: center;
+  transform: translateY(6%);
+}
+
+.quantity-selection {
+  margin: 10px 0;
+}
+
+.quantity-selection label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.length-selection {
+  margin: 10px 0;
+}
+
+.length-selection label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.length-selection select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Style the <select> element */
+select {
+  padding: 10px; 
+  border: 0px solid black; 
+  border-radius: 0px; 
+  background-color: #f9f9f9; 
+  color: black; 
+  font-size: 16px; 
+  cursor: pointer; 
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+}
+
+/* Style the dropdown arrow */
+select {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
+
+/* Style the <select> element on hover */
+select:hover {
+  border-color: #888; /* Change border color on hover */
+}
+
+/* Style the <select> element when focused */
+select:focus {
+  outline: none; /* Remove default outline */
+  border-color: rgba(231, 164, 177, 0.813); /* Change border color when focused */
+  box-shadow: 0 0 5px rgba(231, 164, 177, 0.813); /* Add a subtle shadow */
+}
+
+/* Style the <option> elements */
+option {
+  background-color: #f9f9f9; /* Background color */
+  color: #333; /* Text color */
+  padding: 10px; /* Add padding */
+  text-decoration: none;
+}
+
+/* Style the <option> elements on hover */
+option:hover {
+  background-color: rgba(231, 164, 177, 0.813); /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+
+
+
+
+.add-to-bag {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(231, 164, 177);
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-bag:hover {
+  background-color: rgb(235, 99, 126);
+}
+
+
+
+/* Bag Section */
+.bag-section, .contact-section {
+  padding: 20px;
+}
+
+#bag-items {
+  margin-bottom: 20px;
+}
+
+.bag-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bag-item p {
+  margin: 0;
+}
+
+.remove-item {
+  background-color: rgb(231, 164, 177);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-item:hover {
+  background-color: rgb(235, 99, 126);
+}
+
+#total-price {
+  text-align: right;
+  margin: 20px 0;
+}
+
+/* User Details Form */
+#user-details-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+#user-details-form button, #contactForm button {
+  background-color: rgb(231, 164, 177);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#user-details-form button:hover, #contactForm button:hover {
+  background-color: rgb(235, 99, 126);
+}
+
+.container1 h1{
+  margin-bottom: 5%;
+}
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* Success Message Styles */
+.success-message {
+  position: fixed; /* Make it sticky */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact center */
+  background-color: rgb(231, 164, 177);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  z-index: 1000; /* Ensure it appears above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+  display: none; /* Hidden by default */
+}
+
+/* Close Button Styles */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.close-btn:hover {
+  color: rgb(235, 99, 126); /* Slightly fade on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1023px) {
+  /* Tablet Styles */
+  .header {
+      height: 120px; /* Reduce header height for tablets */
+  }
+
+  nav img {
+      width: 250px; /* Slightly smaller logo for tablets */
+  }
+
+  .hamburger-menu {
+      display: block; /* Show hamburger menu on tablets */
+      transform:translateX(-50%);
+      bottom: -10%;
+  }
+
+  .nav-links {
+      display: none; /* Hide nav links by default on tablets */
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      
+  }
+
+  .nav-links.active {
+      display: block; /* Show nav links when hamburger menu is clicked */
+      background-color: rgb(231, 164, 177);
+      height: 50vh;
+      top: 0;
+      right: 0;
+      text-align: center;
+  }
+
+  .nav-links ul {
+      flex-direction: column;
+      
+  }
+
+  .nav-links ul li {
+      margin: 10px 0;
+      bottom: -20px;  
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile Styles */
+  .header {
+      height: 100px; /* Further reduce header height for mobile */
+  }
+
+  nav img {
+      width: 200px; /* Smaller logo for mobile */
+  }
+
+  .search-bar {
+      max-width: 200px;
+  }
+
+  .search-input {
+      font-size: 14px;
+  }
+
+  .currency-dropdown {
+      margin-left: 10px;
+  }
+
+  #currencyDropdown {
+      padding: 8px 20px;
+      font-size: 14px;
+  }
+}
+
+
+
+
+
+

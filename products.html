@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Reina's Hair</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <!-- Logo -->
+            <a href="index.html"><img src="images/RH.png" alt="Reina's Hair Logo"></a>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="SEARCH" class="search-input" id="search-input">
+                <button class="search-button" id="search-button">
+                    <i class="fas fa-search"></i> 
+                </button>
+            </div>
+
+            <!-- Currency Dropdown -->
+            <div class="currency-dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://flagcdn.com/gb.svg" alt="UK Flag" class="flag-icon"> GBP
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                    <li><a class="dropdown-item" href="#" data-currency="USD">
+                        <img src="https://flagcdn.com/us.svg" alt="USA Flag" class="flag-icon"> USD
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="GBP">
+                        <img src="https://flagcdn.com/gb.svg" alt="UK Flag" class="flag-icon"> GBP
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="CAD">
+                        <img src="https://flagcdn.com/ca.svg" alt="Canada Flag" class="flag-icon"> CAD
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="EUR">
+                        <img src="https://flagcdn.com/eu.svg" alt="EU Flag" class="flag-icon"> EUR
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="AED">
+                        <img src="https://flagcdn.com/ae.svg" alt="UAE Flag" class="flag-icon"> AED
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="ZAR">
+                        <img src="https://flagcdn.com/za.svg" alt="South Africa Flag" class="flag-icon"> ZAR
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="NGN">
+                        <img src="https://flagcdn.com/ng.svg" alt="Nigeria Flag" class="flag-icon"> NGN
+                    </a></li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Menu Icon for responsive -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
+                    <li><a href="bag.html">BAG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section class="products">
+        <!-- Products -->
+        <div class="container">
+            <h1>Our Products</h1>
+            <div class="row">
+
+                <!-- Wigs-->
+                <div class="column">
+                    <a href="wigs.html">
+                        <img src="images/wigs.png" alt="wigs">
+                        <div class="layer">
+                            <h3>WIGS</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Bundles -->
+                <div class="column">
+                    <a href="bundles.html">
+                        <img src="images/bundles.png" alt="bundles">
+                        <div class="layer">
+                            <h3>BUNDLES</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hair Products -->
+                <div class="column">
+                    <a href="hair-products.html">
+                        <img src="images/hair-products.png" alt="hair products">
+                        <div class="layer">
+                            <h3>HAIR PRODUCTS</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Styling Tools -->
+                <div class="column">
+                    <a href="styling-tools.html">
+                        <img src="images/styling.png" alt="styling tools">
+                        <div class="layer">
+                            <h3>STYLING TOOLS</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="footer">
+        <p>Reina's Hair &copy; 2025</p>
+    </div>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
